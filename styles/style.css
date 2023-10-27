@@ -1,0 +1,26 @@
+:root {
+ --primary: #82DF6B;
+ --secondary: #32620E;
+}
+
+@font-face {
+    font-family: 'dino';
+    src: url('../fonts/Balmy.ttf') format('truetype');
+}
+
+body {
+    font-family: 'dino';
+    background-color: var(--primary);
+}
+
+.primary-color {
+    color: var(--primary);
+}
+
+.secondary-color {
+    color: var(--secondary);
+}
+
+.title-banner {
+    background-color: var(--secondary);
+}
