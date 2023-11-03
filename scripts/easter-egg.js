@@ -44,9 +44,9 @@ function jitse() {
 }
 
 function joris() {
-    playAudio('audio/rumble.mp3');
+    playAudio('audio/joris.mp3');
 }
 
 function duncan() {
-    playAudio('audio/bamihap.mp3');
+    playAudio('audio/duncan.mp3');
 }
