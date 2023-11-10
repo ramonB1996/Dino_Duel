@@ -50,3 +50,11 @@ function joris() {
 function duncan() {
     playAudio('audio/duncan.mp3');
 }
+
+function melissa_m() {
+    playAudio('audio/melissa_m.mp3');
+}
+
+function wieteke() {
+    playVideo('video/wieteke.mp4');
+}
