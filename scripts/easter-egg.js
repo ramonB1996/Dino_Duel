@@ -1,7 +1,5 @@
 var playing = false;
 
-var defaultAudio = 'https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3';
-
 function playAudio(src) {
     var audio = document.getElementById("audio");
 
@@ -10,7 +8,8 @@ function playAudio(src) {
         return;
     }
         
-    audio.src = src;
+    var audioPath = "audio/"+src;
+    audio.src = audioPath;
     audio.play();
     playing = true;
 
@@ -21,8 +20,10 @@ function playAudio(src) {
 
 function playVideo(src) {
     var video = document.getElementById("video");
+
+    var videoPath = "video/"+src;
     video.hidden = false;
-    video.src = src;
+    video.src = videoPath;
     video.play();
 
     video.onended = function() {
@@ -33,28 +34,4 @@ function playVideo(src) {
 function endAudioPlayback(audio) {
     audio.src = "";
     playing = false;
-}
-
-function mikky() {
-    playAudio('audio/mikky.mp3');
-}
-
-function jitse() {
-    playVideo('video/jitse.mp4');
-}
-
-function joris() {
-    playAudio('audio/joris.mp3');
-}
-
-function duncan() {
-    playAudio('audio/duncan.mp3');
-}
-
-function melissa_m() {
-    playAudio('audio/melissa_m.mp3');
-}
-
-function wieteke() {
-    playVideo('video/wieteke.mp4');
 }
