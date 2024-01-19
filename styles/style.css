@@ -32,6 +32,10 @@ body {
     color: var(--secondary);
 }
 
+.table td {
+    color: var(--secondary);
+}
+
 .table th, .table td, .table tr {
     border: 2px solid var(--secondary);
 }
